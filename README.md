@@ -2,11 +2,16 @@
 sample application for java
 
 
-git revert <commit_hash> get commit_hash from UI or git log
+1. Git Stash Example:
 
+    ```
+    git stash -- save change to stash
+    git stash pop -- load change from stash
+    ```
 
-git stash -- save change to stash
-git stash pop -- load change from stash
+2. Git Change to Specific Commit
+    ```
+    git revert --no-commit c524ecfcd6db26b97ac8ec924941cd08afed67f1..HEAD
+    git commit
+    ```
 
-git revert --no-commit c524ecfcd6db26b97ac8ec924941cd08afed67f1..HEAD
-git commit
